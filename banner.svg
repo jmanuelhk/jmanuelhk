@@ -1,5 +1,5 @@
-<!-- Banner SVG — v3 “Impulsa” (compatible GitHub) -->
-<svg width="1200" height="320" viewBox="0 0 1200 320" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Manuel Hau — Fullstack &amp; Mobile Engineer">
+<!-- Banner SVG — v3.1 “Impulsa” (alto 360, centrado) -->
+<svg width="1200" height="360" viewBox="0 0 1200 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Manuel Hau — Fullstack &amp; Mobile Engineer">
   <defs>
     <!-- Paleta -->
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
@@ -24,7 +24,6 @@
       <stop offset="60%" stop-color="#FFFFFF" stop-opacity="0.05"/>
       <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
     </linearGradient>
-
     <!-- Sombras/chip -->
     <filter id="chipShadow" x="-20%" y="-50%" width="140%" height="220%">
       <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#000000" flood-opacity="0.35"/>
@@ -38,14 +37,12 @@
       <stop offset="0%" stop-color="#F2C99A"/>
       <stop offset="100%" stop-color="#9C674A"/>
     </linearGradient>
-
     <!-- Tiping mask -->
     <mask id="typing-mask">
       <rect x="0" y="0" width="0" height="64" fill="#fff">
         <animate attributeName="width" values="0; 980; 980; 0" keyTimes="0; 0.45; 0.85; 1" dur="6.2s" repeatCount="indefinite"/>
       </rect>
     </mask>
-
     <!-- Grano suave -->
     <filter id="grain">
       <feTurbulence baseFrequency="0.8" numOctaves="2" seed="7" type="fractalNoise" result="n"/>
@@ -57,38 +54,37 @@
   </defs>
 
   <!-- Fondo -->
-  <rect width="1200" height="320" fill="url(#bg)"/>
+  <rect width="1200" height="360" fill="url(#bg)"/>
 
   <!-- Grid sutil -->
   <g opacity="0.06">
-    <path d="M-200 260 L1400 -120" stroke="url(#soft)" stroke-width="2"/>
-    <path d="M-220 300 L1380 -80" stroke="url(#soft)" stroke-width="2"/>
-    <path d="M-240 340 L1360 -40" stroke="url(#soft)" stroke-width="2"/>
+    <path d="M-200 280 L1400 -100" stroke="url(#soft)" stroke-width="2"/>
+    <path d="M-220 320 L1380 -60" stroke="url(#soft)" stroke-width="2"/>
+    <path d="M-240 360 L1360 -20" stroke="url(#soft)" stroke-width="2"/>
   </g>
 
   <!-- Orbes -->
   <g opacity="0.35">
-    <circle cx="1120" cy="70" r="98" fill="#C3835F"/>
-    <circle cx="170" cy="265" r="74" fill="#6E7786"/>
+    <circle cx="1120" cy="90" r="100" fill="#C3835F"/>
+    <circle cx="170" cy="300" r="82" fill="#6E7786"/>
   </g>
 
   <!-- Sheen animado -->
-  <rect x="-480" y="0" width="420" height="320" fill="url(#sheen)" opacity="0.5">
+  <rect x="-480" y="0" width="420" height="360" fill="url(#sheen)" opacity="0.5">
     <animate attributeName="x" values="-480; 1420" dur="6s" repeatCount="indefinite"/>
   </rect>
 
   <!-- Grano muy tenue -->
-  <rect width="1200" height="320" filter="url(#grain)" opacity="0.15"/>
+  <rect width="1200" height="360" filter="url(#grain)" opacity="0.15"/>
 
-  <!-- Contenido -->
-  <g transform="translate(100,86)">
+  <!-- Contenido centrado -->
+  <g transform="translate(100,110)">
     <!-- Título + typing -->
     <g>
       <text x="0" y="0" font-family="Inter, Segoe UI, Roboto, system-ui, -apple-system, Arial, sans-serif"
             font-size="44" font-weight="800" fill="url(#titleGrad)">
         Manuel Hau — Fullstack &amp; Mobile Engineer
       </text>
-
       <!-- Cursor + máscara -->
       <rect x="0" y="-36" width="2.8" height="52" fill="url(#accent)" mask="url(#typing-mask)">
         <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
@@ -107,7 +103,6 @@
 
     <!-- Chips -->
     <g transform="translate(0,86)">
-      <!-- helper chip(x, w, label) -->
       <g transform="translate(0,0)" filter="url(#chipShadow)">
         <rect rx="14" ry="14" width="126" height="36" fill="#12161C" stroke="#303745"/>
         <text x="18" y="24" font-size="14" font-family="Inter, Segoe UI, Roboto, system-ui, -apple-system, Arial, sans-serif" fill="#E9EDF2">Next.js 15</text>
@@ -153,14 +148,9 @@
       </text>
     </g>
 
-    <rect x="0" y="140" width="980" height="1" fill="#FFFFFF" fill-opacity="0.10"/>
-
-    <rect x="0" y="140" width="980" height="1" fill="#FFFFFF" fill-opacity="0.10"/>
-    
-
     <!-- Botón CTA decorativo -->
-    <g transform="translate(0,212)">
-      <rect x="0" y="-24" width="360" height="42" rx="12" fill="url(#btn)" stroke="url(#btnStroke)" stroke-width="1.2"/>
+    <g transform="translate(0,230)">
+      <rect x="0" y="-24" width="320" height="42" rx="12" fill="url(#btn)" stroke="url(#btnStroke)" stroke-width="1.2"/>
       <text x="20" y="4" font-family="Inter, Segoe UI, Roboto, system-ui, -apple-system, Arial, sans-serif"
             font-size="15" font-weight="800" fill="#1B1F26">
         Solicita una demo — @jmanuelhk
@@ -169,6 +159,6 @@
   </g>
 
   <!-- Créditos -->
-  <text x="1186" y="304" text-anchor="end" font-family="Inter, Segoe UI, Roboto, system-ui, -apple-system, Arial, sans-serif"
+  <text x="1186" y="340" text-anchor="end" font-family="Inter, Segoe UI, Roboto, system-ui, -apple-system, Arial, sans-serif"
         font-size="11" fill="#7A8290">© Manuel Hau — Yucatán, MX</text>
 </svg>
