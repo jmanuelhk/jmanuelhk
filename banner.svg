@@ -153,9 +153,14 @@
       </text>
     </g>
 
+    <rect x="0" y="140" width="980" height="1" fill="#FFFFFF" fill-opacity="0.10"/>
+
+    <rect x="0" y="140" width="980" height="1" fill="#FFFFFF" fill-opacity="0.10"/>
+    
+
     <!-- Botón CTA decorativo -->
     <g transform="translate(0,212)">
-      <rect x="0" y="-24" width="260" height="42" rx="12" fill="url(#btn)" stroke="url(#btnStroke)" stroke-width="1.2"/>
+      <rect x="0" y="-24" width="360" height="42" rx="12" fill="url(#btn)" stroke="url(#btnStroke)" stroke-width="1.2"/>
       <text x="20" y="4" font-family="Inter, Segoe UI, Roboto, system-ui, -apple-system, Arial, sans-serif"
             font-size="15" font-weight="800" fill="#1B1F26">
         Solicita una demo — @jmanuelhk
