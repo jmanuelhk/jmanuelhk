@@ -13,13 +13,17 @@
 
 ## 🚀 About Me
 
-Soy un **Mobile-First Engineer** con +6 años de experiencia desarrollando aplicaciones modernas usando **React Native**, **React.js (Next.js 15)** y **Node.js/Express**.  
-Actualmente estoy construyendo **Conciencia Web**, un ERP modular y multi-tenant para negocios de impresión y promocionales en México, integrando:
+Soy un **Fullstack & Mobile Engineer** con +6 años de experiencia, especializado en construir aplicaciones **mobile-first**, escalables y con UI/UX modernas.  
 
-- 🧾 Cotizaciones avanzadas paso a paso (**Quote Wizard**)  
-- 👥 Gestión de clientes, contactos, items y proveedores  
-- 💸 Cálculo dinámico de precios según técnica, arranques y variantes  
-- ☁️ Integración con **AWS S3**, **Firebase Auth** y **Mongoose/Prisma**  
+Actualmente lidero el desarrollo de **Impulsa ERP**, un sistema **multi-tenant** diseñado para la **venta y adquisición por pequeñas y medianas empresas**, ofreciendo:  
+
+- 🏢 Gestión integral de clientes, inventario, ventas y finanzas  
+- 🔑 Multi-tenant con roles y permisos avanzados  
+- ☁️ Arquitectura SaaS lista para escalar en la nube  
+- 💳 Integración con autenticación segura y almacenamiento en AWS S3  
+
+✨ **Impulsa ERP** es el **ERP pensado para escalar tu negocio**.  
+👉 Si quieres una **demo personalizada**, [¡contáctame aquí!](https://www.linkedin.com/in/jmanuelhk/)  
 
 ---
 
@@ -39,11 +43,23 @@ Actualmente estoy construyendo **Conciencia Web**, un ERP modular y multi-tenant
 
 ---
 
-## 📂 Featured Projects
+## 💼 Experience
 
-- 🔥 **Conciencia Web (ERP SaaS)** — Plataforma modular para cotizaciones y gestión de negocios de impresión.  
-- 📡 **Giganexus Telecom** — Proyecto de redes FTTH con Mikrotik, VLANs y CCR2216.  
-- ☕ **Rebels Coffee Club** — Landing page con promociones, subscripciones y estilo visual moderno.  
+- 🎥 **MediaMonks** — Desarrollador en proyectos internacionales, contribuyendo en aplicaciones de alto impacto como:  
+  - ✈️ **Aeroméxico App**  
+  - 🦁 **RBQuest (Singapore Zoo)**  
+  - 🌍 Campañas digitales globales para marcas líderes  
+
+- 👨‍💻 **Freelance / Startups** — Desarrollo de plataformas SaaS, e-commerce y proyectos personalizados para empresas locales y clientes internacionales.  
+
+---
+
+## 📂 Projects
+
+- 🚀 **Impulsa ERP (Multi-Tenant)** — ERP modular y comercializable para PYMEs. ✨ *Si quieres una demo, [contáctame](https://www.linkedin.com/in/jmanuelhk/).*  
+- 🔥 **Conciencia Web** — ERP modular para impresión y promocionales (proyecto técnico avanzado).  
+- 📡 **Giganexus Telecom** — Proyecto FTTH con Mikrotik, VLANs y CCR2216.  
+- ☕ **Rebels Coffee Club** — Landing page con promociones y suscripciones.  
 - 👕 **Revibe** — E-commerce de ropa personalizada con impresión DTF.  
 
 ---
@@ -82,5 +98,3 @@ Actualmente estoy construyendo **Conciencia Web**, un ERP modular y multi-tenant
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=jmanuelhk&layout=compact&theme=radical" alt="Top Langs" height="120"/>
 </p>
-
----
