@@ -1,7 +1,6 @@
-<!-- Banner SVG animado — v2 compatible con GitHub -->
-<svg width="1200" height="300" viewBox="0 0 1200 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Manuel Hau — Fullstack & Mobile Engineer">
+<!-- Banner SVG animado — v2.1 (ampersands escapados) -->
+<svg width="1200" height="300" viewBox="0 0 1200 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Manuel Hau — Fullstack &amp; Mobile Engineer">
   <defs>
-    <!-- Fondo y acentos -->
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0%" stop-color="#0F1115"/>
       <stop offset="100%" stop-color="#1A1E25"/>
@@ -14,76 +13,53 @@
       <stop offset="0%" stop-color="#A0A7B3"/>
       <stop offset="100%" stop-color="#E0E3E8"/>
     </linearGradient>
-
-    <!-- Brillo diagonal (usar stop-opacity en lugar de rgba) -->
     <linearGradient id="sheen" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0"/>
       <stop offset="40%" stop-color="#FFFFFF" stop-opacity="0.15"/>
       <stop offset="60%" stop-color="#FFFFFF" stop-opacity="0.05"/>
       <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
     </linearGradient>
-
-    <!-- Blur orbes -->
-    <filter id="blur3">
-      <feGaussianBlur stdDeviation="3"/>
-    </filter>
-
-    <!-- Máscara typing -->
+    <filter id="blur3"><feGaussianBlur stdDeviation="3"/></filter>
     <mask id="typing-mask">
       <rect id="typing-rect" x="0" y="0" width="0" height="60" fill="#fff">
-        <animate attributeName="width"
-                 values="0; 920; 920; 0"
-                 keyTimes="0; 0.45; 0.85; 1"
-                 dur="6s"
-                 repeatCount="indefinite"/>
+        <animate attributeName="width" values="0; 920; 920; 0" keyTimes="0; 0.45; 0.85; 1" dur="6s" repeatCount="indefinite"/>
       </rect>
     </mask>
   </defs>
 
-  <!-- FONDO -->
   <rect width="1200" height="300" fill="url(#bg)"/>
 
-  <!-- Orbes -->
   <g opacity="0.35" filter="url(#blur3)">
     <circle cx="1070" cy="70" r="90" fill="#C17F59"/>
     <circle cx="180" cy="250" r="70" fill="#6F7785"/>
   </g>
 
-  <!-- Líneas diagonales -->
   <g opacity="0.08">
     <path d="M-100 280 L1300 -120" stroke="url(#soft)" stroke-width="2"/>
     <path d="M-140 320 L1260 -80" stroke="url(#soft)" stroke-width="2"/>
   </g>
 
-  <!-- Sheen animado -->
   <rect x="-400" y="0" width="400" height="300" fill="url(#sheen)" opacity="0.5">
     <animate attributeName="x" values="-400; 1400" dur="5.5s" repeatCount="indefinite"/>
   </rect>
 
-  <!-- CONTENIDO -->
   <g transform="translate(100,75)">
-    <!-- Título con “typing” -->
     <g>
       <text x="0" y="0" font-family="Segoe UI, Roboto, system-ui, -apple-system, Arial, sans-serif" font-size="36" font-weight="700" fill="url(#accent)">
         Manuel Hau — Fullstack &amp; Mobile Engineer
       </text>
-      <!-- Cursor -->
       <rect x="0" y="-28" width="2.5" height="40" fill="url(#accent)" mask="url(#typing-mask)">
         <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
       </rect>
-      <!-- Texto “revelado” por máscara -->
       <text x="0" y="0" font-family="Segoe UI, Roboto, system-ui, -apple-system, Arial, sans-serif" font-size="36" font-weight="700" fill="url(#accent)" mask="url(#typing-mask)">
         Manuel Hau — Fullstack &amp; Mobile Engineer
       </text>
     </g>
 
-    <!-- Subtítulo -->
-    <text x="0" y="38" font-family="Segoe UI, Roboto, system-ui, -apple-system, Arial, sans-serif"
-          font-size="16" fill="#C8CDD6">
+    <text x="0" y="38" font-family="Segoe UI, Roboto, system-ui, -apple-system, Arial, sans-serif" font-size="16" fill="#C8CDD6">
       Mobile-First · React / Next.js · React Native · Node.js · SaaS Builder
     </text>
 
-    <!-- Chips -->
     <g transform="translate(0,72)">
       <g transform="translate(0,0)">
         <rect rx="10" ry="10" width="120" height="30" fill="#FFFFFF" fill-opacity="0.06" stroke="#2A303B"/>
@@ -115,13 +91,10 @@
       </g>
     </g>
 
-    <!-- Separador -->
     <rect x="0" y="118" width="920" height="1" fill="#FFFFFF" fill-opacity="0.08"/>
 
-    <!-- Slogan -->
     <g transform="translate(0,148)">
-      <text x="0" y="0" font-family="Segoe UI, Roboto, system-ui, -apple-system, Arial, sans-serif"
-            font-size="15" fill="#C8CDD6">
+      <text x="0" y="0" font-family="Segoe UI, Roboto, system-ui, -apple-system, Arial, sans-serif" font-size="15" fill="#C8CDD6">
         Construyendo <tspan fill="url(#accent)" font-weight="700">Impulsa ERP</tspan> — ERP multi-tenant listo para venta y adquisición.
       </text>
       <text x="0" y="26" font-family="Segoe UI, Roboto, system-ui, -apple-system, Arial, sans-serif" font-size="13" fill="#AAB2BF">
@@ -129,7 +102,6 @@
       </text>
     </g>
 
-    <!-- Botón decorativo -->
     <g transform="translate(0,210)">
       <rect x="0" y="-22" width="220" height="36" rx="10" fill="url(#accent)" opacity="0.9">
         <animate attributeName="opacity" values="0.9;1;0.9" dur="2.8s" repeatCount="indefinite"/>
@@ -140,7 +112,6 @@
     </g>
   </g>
 
-  <!-- Créditos -->
   <text x="1185" y="292" text-anchor="end" font-family="Segoe UI, Roboto, system-ui, -apple-system, Arial, sans-serif" font-size="10" fill="#6F7785">
     © Manuel Hau — Yucatán, MX
   </text>
