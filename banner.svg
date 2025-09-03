@@ -1,0 +1,155 @@
+<!--
+  Banner SVG animado para GitHub README
+  Paleta: gris/negro con acentos cobre/dorado
+  Autor: Manuel Hau (jmanuelhk)
+  Tip: puedes editar los textos entre comillas y los colores en la sección VARIABLES
+-->
+<svg width="1200" height="300" viewBox="0 0 1200 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Manuel Hau — Fullstack & Mobile Engineer">
+  <defs>
+    <!-- ========== VARIABLES (colores y gradientes) ========== -->
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0F1115"/>
+      <stop offset="100%" stop-color="#1A1E25"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <!-- cobre/dorado sutil -->
+      <stop offset="0%" stop-color="#C17F59"/>
+      <stop offset="100%" stop-color="#D8A46F"/>
+    </linearGradient>
+    <linearGradient id="soft" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#A0A7B3"/>
+      <stop offset="100%" stop-color="#E0E3E8"/>
+    </linearGradient>
+
+    <!-- Brillo diagonal suave -->
+    <linearGradient id="sheen" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="rgba(255,255,255,0)"/>
+      <stop offset="40%" stop-color="rgba(255,255,255,0.15)"/>
+      <stop offset="60%" stop-color="rgba(255,255,255,0.05)"/>
+      <stop offset="100%" stop-color="rgba(255,255,255,0)"/>
+    </linearGradient>
+
+    <!-- Filtro blur para orbes -->
+    <filter id="blur3">
+      <feGaussianBlur stdDeviation="3"/>
+    </filter>
+
+    <!-- Mascara para typing -->
+    <mask id="typing-mask">
+      <!-- Rect que “crece” para revelar el texto -->
+      <rect id="typing-rect" x="0" y="0" width="0" height="60" fill="#fff">
+        <animate attributeName="width"
+                 values="0; 920; 920; 0"
+                 keyTimes="0; 0.45; 0.85; 1"
+                 dur="6s"
+                 repeatCount="indefinite"/>
+      </rect>
+    </mask>
+  </defs>
+
+  <!-- ========== FONDO ========== -->
+  <rect width="1200" height="300" fill="url(#bg)"/>
+
+  <!-- Orbes decorativos -->
+  <g opacity="0.35" filter="url(#blur3)">
+    <circle cx="1070" cy="70" r="90" fill="#C17F59"/>
+    <circle cx="180" cy="250" r="70" fill="#6F7785"/>
+  </g>
+
+  <!-- Líneas sutiles diagonales -->
+  <g opacity="0.08">
+    <path d="M-100 280 L1300 -120" stroke="url(#soft)" stroke-width="2"/>
+    <path d="M-140 320 L1260 -80" stroke="url(#soft)" stroke-width="2"/>
+  </g>
+
+  <!-- Sheen animado -->
+  <rect x="-400" y="0" width="400" height="300" fill="url(#sheen)" opacity="0.5">
+    <animate attributeName="x" values="-400; 1400" dur="5.5s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- ========== CONTENIDO ========== -->
+  <g transform="translate(100,75)">
+    <!-- Título con efecto typing -->
+    <g>
+      <text x="0" y="0" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto" font-size="36" font-weight="700" fill="url(#accent)">
+        Manuel Hau — Fullstack &amp; Mobile Engineer
+      </text>
+      <!-- Cursor -->
+      <rect x="0" y="-28" width="2.5" height="40" fill="url(#accent)" mask="url(#typing-mask)">
+        <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
+      </rect>
+      <!-- Aplicamos la máscara al texto para simular typing -->
+      <text x="0" y="0" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto" font-size="36" font-weight="700" fill="url(#accent)" mask="url(#typing-mask)">
+        Manuel Hau — Fullstack &amp; Mobile Engineer
+      </text>
+    </g>
+
+    <!-- Subtítulo -->
+    <text x="0" y="38" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto"
+          font-size="16" fill="#C8CDD6">
+      Mobile-First · React / Next.js · React Native · Node.js · SaaS Builder
+    </text>
+
+    <!-- Chips de stack -->
+    <g transform="translate(0,72)">
+      <!-- helper: chip(x, label) -->
+      <g transform="translate(0,0)">
+        <rect rx="10" ry="10" width="120" height="30" fill="rgba(255,255,255,0.06)" stroke="#2A303B"/>
+        <text x="14" y="20" font-size="14" font-family="ui-sans-serif, system-ui" fill="#E7EAEE">Next.js 15</text>
+      </g>
+      <g transform="translate(132,0)">
+        <rect rx="10" ry="10" width="130" height="30" fill="rgba(255,255,255,0.06)" stroke="#2A303B"/>
+        <text x="14" y="20" font-size="14" font-family="ui-sans-serif, system-ui" fill="#E7EAEE">React Native</text>
+      </g>
+      <g transform="translate(264,0)">
+        <rect rx="10" ry="10" width="110" height="30" fill="rgba(255,255,255,0.06)" stroke="#2A303B"/>
+        <text x="14" y="20" font-size="14" font-family="ui-sans-serif, system-ui" fill="#E7EAEE">Node.js</text>
+      </g>
+      <g transform="translate(386,0)">
+        <rect rx="10" ry="10" width="120" height="30" fill="rgba(255,255,255,0.06)" stroke="#2A303B"/>
+        <text x="14" y="20" font-size="14" font-family="ui-sans-serif, system-ui" fill="#E7EAEE">Prisma/Mongo</text>
+      </g>
+      <g transform="translate(518,0)">
+        <rect rx="10" ry="10" width="110" height="30" fill="rgba(255,255,255,0.06)" stroke="#2A303B"/>
+        <text x="14" y="20" font-size="14" font-family="ui-sans-serif, system-ui" fill="#E7EAEE">Firebase</text>
+      </g>
+      <g transform="translate(640,0)">
+        <rect rx="10" ry="10" width="92" height="30" fill="rgba(255,255,255,0.06)" stroke="#2A303B"/>
+        <text x="14" y="20" font-size="14" font-family="ui-sans-serif, system-ui" fill="#E7EAEE">AWS S3</text>
+      </g>
+      <g transform="translate(744,0)">
+        <rect rx="10" ry="10" width="110" height="30" fill="rgba(255,255,255,0.06)" stroke="#2A303B"/>
+        <text x="14" y="20" font-size="14" font-family="ui-sans-serif, system-ui" fill="#E7EAEE">Tailwind</text>
+      </g>
+    </g>
+
+    <!-- Línea separadora -->
+    <rect x="0" y="118" width="920" height="1" fill="rgba(255,255,255,0.08)"/>
+
+    <!-- Slogan / proyecto principal -->
+    <g transform="translate(0,148)">
+      <text x="0" y="0" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto"
+            font-size="15" fill="#C8CDD6">
+        Construyendo <tspan fill="url(#accent)" font-weight="700">Conciencia Web</tspan> — ERP modular y multi-tenant para impresión y promocionales.
+      </text>
+      <text x="0" y="26" font-family="ui-sans-serif, system-ui" font-size="13" fill="#AAB2BF">
+        Quote Wizard · Técnicas y variantes · Cálculo dinámico · Auth Firebase · S3 · Mongoose/Prisma
+      </text>
+    </g>
+
+    <!-- Botón “conectar” (decorativo) -->
+    <g transform="translate(0,210)">
+      <rect x="0" y="-22" width="170" height="36" rx="10" fill="url(#accent)" opacity="0.9">
+        <animate attributeName="opacity" values="0.9;1;0.9" dur="2.8s" repeatCount="indefinite"/>
+      </rect>
+      <text x="16" y="1" font-family="ui-sans-serif, system-ui" font-size="14" font-weight="700" fill="#1B1E24">
+        Conecta en LinkedIn / @jmanuelhk
+      </text>
+    </g>
+  </g>
+
+  <!-- Créditos sutiles -->
+  <text x="1185" y="292" text-anchor="end" font-family="ui-sans-serif, system-ui" font-size="10" fill="#6F7785">
+    © Manuel Hau — Yucatán, MX
+  </text>
+</svg>
