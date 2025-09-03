@@ -1,6 +1,6 @@
 <!-- Banner SVG Animado -->
 <p align="center">
-  <img src="./banner.svg" width="100%" alt="Manuel Hau — Fullstack & Mobile Engineer" />
+  <img src="https://raw.githubusercontent.com/jmanuelhk/jmanuelhk/main/banner.svg" width="100%" />
 </p>
 
 <h1 align="center">💻 Manuel Hau — Fullstack & Mobile Engineer</h1>
